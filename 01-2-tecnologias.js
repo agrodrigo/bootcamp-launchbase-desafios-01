@@ -20,7 +20,7 @@ function checaSeUsuarioUsaCSS(usuario) {
     return false
 }
 
-for (let i = 0; i < usuarios.length; i++) {
+for (let i in usuarios) {
     const usuarioTrabalhaComCSS = checaSeUsuarioUsaCSS(usuarios[i])
 
     if(usuarioTrabalhaComCSS) {
